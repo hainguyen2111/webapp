@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>trang chu</title>
+    <link href="{{ url_for('static', filename='css/style.css')}}" rel="stylesheet">
+</head>
+<body>
+<h1 class="subject">Webstile ban han truc tuyen</h1>
+<ul>
+    <li><a href="/products">Tat ca san pham</a> </li>
+    {% for c in catgories %}
+    <li><a href="#">{{c.name}} </a> </li>
+    {% endfor %}
+</ul>
+</body>
+</html>
